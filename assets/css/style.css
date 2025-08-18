@@ -1,0 +1,173 @@
+/* ------------------------------------------------------------------ */
+
+/* fonts */
+@font-face {
+    font-family: vazir;
+    src: url(/assets/fonts/vazir-font-v18.0.0/Vazir-Bold.woff);
+    src: url(/assets/fonts/vazir-font-v18.0.0/Vazir-Bold.woff2);
+}
+
+@font-face {
+    font-family: yekan;
+    src: url(/assets/fonts/yekan-font/yekan-regular.woff);
+    src: url(/assets/fonts/yekan-font/yekan-regular.ttf);
+}
+
+@font-face {
+    font-family: tanha;
+    src: url(/assets/fonts/tanha-font-v0.9/Tanha.woff);
+    src: url(/assets/fonts/tanha-font-v0.9/Tanha.woff2);
+}
+
+/* ------------------------------------------------------------------ */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* video of main background */
+.backgroundVideo {
+    position: absolute;
+    width: 100%;
+    height: 92rem;
+    z-index: -1;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.videoBox {
+    width: 47.5vw;
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.052);
+    margin-bottom: 3rem;
+}
+
+/* funk music video */
+.videoBox video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* funk music video text */
+.videoBox h1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.044);
+    text-shadow: 0 0 10px black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 40%;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    font-size: 40px;
+    letter-spacing: 5px;
+    bottom: 40%;
+}
+
+.audioBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* each audio/music with its name */
+.anAudio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.222) inset;
+}
+
+/* each music/audio row */
+.rowAudios {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* name of the music/audios */
+p {
+    color: white;
+    letter-spacing: 1rem;
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.433);
+}
+
+.letterSpacing05 {
+    letter-spacing: 0.5rem;
+}
+
+audio {
+    width: 25rem;
+    height: 2.75rem;
+    background-color: black;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    border-radius: 1000px;
+}
+
+/* footer text */
+.footer {
+    color: white;
+    font-size: 1rem;
+    padding: 1.5rem;
+}
+
+/* responsive */
+@media (max-width:413px) {
+    
+    /* each music/audio row */
+    .rowAudios {
+        flex-direction: column;
+    }
+    
+    .videoBox {
+        width: 90vw;
+    }
+    
+    audio {
+        width: 20rem;
+    }
+    
+    /* funk music video text */
+    .videoBox h1 {
+        width: 60%;
+        font-size: 30px;
+        bottom: 30%;
+    }
+    
+    .videoBox {
+        border-radius: 1rem;
+    }
+    
+    /* video of main background */
+    .backgroundVideo {
+        height: 200rem;
+    }
+}
+
+/* ------------------------------------------------------------------ */
