@@ -138,7 +138,7 @@ audio {
 }
 
 /* responsive */
-@media (max-width:413px) {
+@media (max-width:768px) {
     
     /* each music/audio row */
     .rowAudios {
